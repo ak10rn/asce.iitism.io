@@ -28,8 +28,10 @@
     display: block;
 }
 
+/* Home Page */
+
 #welcomeArea{
-    height: 400px;
+    height: 300px;
 }
 
 #welcomeText{
@@ -50,6 +52,7 @@
     clear: both;
     width: 100%;
     padding-top: 0;
+    margin-bottom: 10px;
 }
 
 #footer-bottom{
@@ -72,5 +75,30 @@ padding: 10px;
 
 
 .about-content{
+    width: 100%;
+}
+
+/* advisor page */ 
+
+#advisor1Text{
+    clear: both;
+}
+
+#advisor2Text{
+    clear: both;
+}  
+
+.advisorPhotoBox{
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.advisorPhotoBox img{
+    float: left;
+    width: 110px;
+}
+
+.advisorText{
     width: 100%;
 }
