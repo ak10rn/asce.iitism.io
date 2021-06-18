@@ -28,8 +28,11 @@
     display: block;
 }
 
+#welcomeArea{
+    height: 400px;
+}
+
 #welcomeText{
-<<<<<<< HEAD
     font-size: 2.5em;
 }
 
@@ -37,12 +40,6 @@
     width: 98%;
 }
 
-=======
-    padding-top: 40%;
-    font-size: 2.5em;
-}
-
->>>>>>> 9ecb62daf9f608083d690a6ab32982978f68232a
 .centered{
     display: block;
     clear: both;
