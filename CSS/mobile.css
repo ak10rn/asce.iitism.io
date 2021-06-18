@@ -1,0 +1,79 @@
+#hamburger{
+    display: block;
+    font-size: 35px;
+    color: white;
+    margin: 10px 10px 0 0;
+    float: right;
+    padding: 1px 20px 3px 20px;
+}
+
+#hamburger:hover{
+    cursor: pointer;
+    background: white;
+    color: #005DAB;
+}
+
+.mobile-container{
+    width: 100%;
+    clear: both;
+    margin: auto;
+    display: none;
+}
+
+#navbar ul li {
+    width: 100%;
+}
+
+#toggle:checked + .mobile-container {
+    display: block;
+}
+
+#welcomeText{
+<<<<<<< HEAD
+    font-size: 2.5em;
+}
+
+.about-box{
+    width: 98%;
+}
+
+=======
+    padding-top: 40%;
+    font-size: 2.5em;
+}
+
+>>>>>>> 9ecb62daf9f608083d690a6ab32982978f68232a
+.centered{
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+.head-style{
+    clear: both;
+    width: 100%;
+    padding-top: 0;
+}
+
+#footer-bottom{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#copyright{
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px #005DAB;
+    padding: 15px;
+}
+
+#social-media-icons{
+padding: 10px;
+}
+
+
+.about-content{
+    width: 100%;
+}
