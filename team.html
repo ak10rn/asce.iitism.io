@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/flip-card.css" />
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/mobile.css">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/b9327e5f49.js" crossorigin="anonymous"></script>
 
@@ -38,10 +38,14 @@
     </header>
 
     <div class="fixedArea"></div>
+    <div id="team-heading">
+      <h2>Our Team</h2>
+      <div id="border-bottom"></div>
+    </div>
 
     <div class="flip-card-body" id="profile-flip-card">
 
-        <div class="flip-card-container">
+        <div data-aos="zoom-in" class="flip-card-container">
           <div class="flip-card">
             <div class="flip-card-front">
             </div>
@@ -60,7 +64,7 @@
           </div>
         </div>
 
-        <div class="flip-card-container">
+        <div data-aos="zoom-in" class="flip-card-container">
             <div class="flip-card">
               <div class="flip-card-front">
               </div>
@@ -79,7 +83,7 @@
             </div>
           </div>
 
-          <div class="flip-card-container">
+          <div data-aos="zoom-in" class="flip-card-container">
             <div class="flip-card">
               <div class="flip-card-front">
               </div>
@@ -98,7 +102,7 @@
             </div>
           </div>          
  
-          <div class="flip-card-container">
+          <div data-aos="zoom-in" class="flip-card-container">
             <div class="flip-card">
               <div class="flip-card-front">
               </div>
@@ -117,7 +121,7 @@
             </div>
           </div>
 
-          <div class="flip-card-container">
+          <div data-aos="zoom-in" class="flip-card-container">
             <div class="flip-card">
               <div class="flip-card-front"></div>
               <div class="flip-card-back">
@@ -138,26 +142,26 @@
         </div>
 
     <div id="footer">
-        <div id="footer-top">
-            <div id="bottomLogos" class="centered">
-                    <img id="asceLogo" src="image/logo.jpg" alt="">
-                    <img id="ismLogo" src="image/ism-logo.png" alt="">
-                    <p>ASCE Student Chapter <br> IIT (ISM) Dhanbad</p>
-            </div>
-            
-            <div id="location" class="centered">
-                <h3>Location</h3>
-                <p>Department of Civil Engineering, IIT (ISM) Dhanbad, India - 826004</p>
-            </div>
-            <div id="otherLinks" class="centered">
-                <h3>Other Links</h3>
-                <ul>
-                    <li><a href="https://www.asce.org/" target="_blank">ASCE international</a></li>
-                    <li><a href="">Department Website</a></li>
-                    <li><a href="https://iitism.ac.in/" target="_blank">IIT (ISM) Dhanbad Official Website</a></li>
-                </ul>
-            </div>
+      <div id="footer-top">
+        <div id="bottomLogos" class="centered">
+                <img id="asceLogo" src="image/logo.jpg" alt="">
+                <p>ASCE Student Chapter <br> IIT (ISM) Dhanbad</p>
         </div>
+        
+        <div id="location" class="centered">
+            <img id="ismLogo" src="image/ism-logo.png" alt="">
+            <h3>Location</h3>
+            <p>Department of Civil Engineering, IIT (ISM) Dhanbad, India - 826004</p>
+        </div>
+        <div id="otherLinks" class="centered">
+            <h3>Other Links</h3>
+            <ul>
+                <li><a href="https://www.asce.org/" target="_blank">ASCE international</a></li>
+                <li><a href="">Department Website</a></li>
+                <li><a href="https://iitism.ac.in/" target="_blank">IIT (ISM) Dhanbad Official Website</a></li>
+            </ul>
+        </div>
+      </div>
 
         <div id="footer-bottom">
             <div id="copyright" class="centered">
@@ -173,6 +177,10 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/mobile.css">
     <link rel="stylesheet" href="CSS/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/b9327e5f49.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -45,7 +47,7 @@
                         <div class="wrapper">
                             <div class="row no-gutters">
                                 <div class="col-md-7 d-flex align-items-stretch">
-                                    <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <div data-aos="zoom-in-right" class="contact-wrap w-100 p-md-5 p-4">
                                         <h2 class="mb-4"><b>Let Us Know</b></h2><br>
 
                                         <form method="POST" id="contactForm" name="contactForm">
@@ -80,7 +82,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="col-md-5 d-flex align-items-stretch">
+                                <div data-aos="zoom-in-left" class="col-md-5 d-flex align-items-stretch">
                                     <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
                                         <h3 class="mb-4 mt-md-4"><u>Contact us</u></h3><br>
                                         <div class="dbox w-100 d-flex align-items-start">
@@ -128,11 +130,11 @@
         <div id="footer-top">
             <div id="bottomLogos" class="centered">
                     <img id="asceLogo" src="image/logo.jpg" alt="">
-                    <img id="ismLogo" src="image/ism-logo.png" alt="">
                     <p>ASCE Student Chapter <br> IIT (ISM) Dhanbad</p>
             </div>
             
             <div id="location" class="centered">
+                <img id="ismLogo" src="image/ism-logo.png" alt="">
                 <h3>Location</h3>
                 <p>Department of Civil Engineering, IIT (ISM) Dhanbad, India - 826004</p>
             </div>
@@ -160,6 +162,11 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

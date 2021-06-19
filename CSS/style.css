@@ -24,6 +24,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 1;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.6);
 }
 
 .clear{
@@ -95,15 +96,14 @@ header{
     padding-bottom: 30px;
     
 }
+.centered{
+    width: 300px;
+}
 
 #bottomLogos{
     color: #fff;
     float: left;
-    min-width: 288px;
-}
-
-#bottomLogos p{
-    width: 100%;
+    text-align: center;
 }
 
 #asceLogo{
@@ -113,12 +113,10 @@ header{
 
 #ismLogo{
     width: 95px;
-    margin-top: 23px;
-    margin-left: 10px;
+    margin-top: 18px;    
 }
 
 #location{
-    padding: 50px 0px;
     display: inline;
     width: 300px;
     text-align: center;
@@ -133,7 +131,7 @@ header{
 
 #otherLinks ul li{
     list-style: none;
-    line-height: 2em;
+    line-height: 2.5em;
 }
 
 #otherLinks ul li a{
@@ -198,6 +196,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 60px;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -289,6 +288,7 @@ header{
     border-radius: 50%;
     display: block;
     margin: auto;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.6);
 }
 
 .advisorText{
