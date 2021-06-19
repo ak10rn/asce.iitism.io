@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
 </head>
-<body onload="loader()">
+<body>
     <div id="preload-back">
         <div id="loader" class="loader">Loading...</div>
     </div>
@@ -107,7 +107,7 @@
         </div>
     </div>
     <script>
-        function loader(){
+        window.onload = function(){
             document.getElementById("loader").style.display = "none";
         }
     </script>
