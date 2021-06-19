@@ -1,8 +1,4 @@
-body {
-    background: #fff;
-  }
-  
-  .loader {
+    .loader {
     z-index: 99999;
     width: 250px;
     height: 50px;
