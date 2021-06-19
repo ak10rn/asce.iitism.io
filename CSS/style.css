@@ -56,6 +56,7 @@ header{
     padding: 24px 25px;
     text-align: center;
     font-weight: bold;
+    transition: .3s all ease
 }
 
 
