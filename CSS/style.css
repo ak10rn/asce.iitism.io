@@ -138,6 +138,8 @@ header{
 #otherLinks ul li a{
     text-decoration: none;
     color: #aaa;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
 }
 
 #otherLinks ul li a:hover{
