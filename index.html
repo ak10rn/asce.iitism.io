@@ -11,6 +11,8 @@
     
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/preloader.css">
     
     <script src="https://kit.fontawesome.com/b9327e5f49.js" crossorigin="anonymous"></script>
     
@@ -18,8 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
 </head>
-<body>
-
+<body onload="loader()">
+    <div id="loader" class="loader">Loading...</div>
     <header>
         <div>
             <div>
@@ -44,11 +46,11 @@
 
     <div id="welcomeArea">
         <div id="welcomeTextArea">
-        <p id="welcomeText">Welcome To ASCE Student Chapter IIT (ISM) Dhanbad</p>
+        <p data-aos="fade-down" id="welcomeText">Welcome To ASCE Student Chapter IIT (ISM) Dhanbad</p>
         </div>
     </div>
     
-    <div id="aboutInstitution" class="about-box">
+    <div data-aos="zoom-in-up" id="aboutInstitution" class="about-box">
         <div class="head-style" id="instituion-head-alignment">
             <h2>About Institution</h2>
         </div>
@@ -57,7 +59,7 @@
         </div>
     </div>
 
-    <div id="about-asce" class="about-box">
+    <div data-aos="zoom-in-up" id="about-asce" class="about-box">
         <div class="head-style" id="asce-head-alignment">
             <h2>About ASCE</h2>
         </div>
@@ -102,6 +104,16 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var preloader= document.getElementById("loader");
+        function loader(){
+            preloader.style.display = "none";
+        }
+
+        AOS.init();
+    </script>
     
 </body>
 </html>

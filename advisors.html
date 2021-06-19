@@ -9,6 +9,7 @@
     <link rel="icon" type="image/gif/png" href="image/logo.jpg">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b9327e5f49.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -35,7 +36,7 @@
 
     <div class="fixedArea"></div>
 
-    <div class="advisorBox" id="advisor1">
+    <div data-aos="zoom-in-up" class="advisorBox" id="advisor1">
         <div class="advisorPhotoBox" id="advisor1Photo">
             <img src="image/professor.jpg" alt="">
         </div>
@@ -44,7 +45,7 @@
         </div>
     </div>
 
-    <div class="advisorBox" id="advisor2">
+    <div data-aos="zoom-in-up" class="advisorBox" id="advisor2">
         <div class="advisorPhotoBox" id="advisor2Photo">
             <img src="image/professor.jpg" alt="">
         </div>
@@ -89,6 +90,11 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>    
     
 </body>
 </html>

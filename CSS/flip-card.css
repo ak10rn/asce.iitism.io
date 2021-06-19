@@ -98,6 +98,8 @@
   text-align: center;
   text-decoration: none;
   border-radius: 100%;  
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .fa-facebook {
   background: #3b5998;
