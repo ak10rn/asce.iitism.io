@@ -53,34 +53,42 @@
 				      		            <div id="form-message-success" class="mb-4">
 				                            Your message was sent, thank you!
 				      		            </div>
-                                        <form method="POST" id="contactForm" name="contactForm">
+                                        <div class="alert" id="alert">Please fill all the Details!</div>  
+                                          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe> 
+                                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfAiN8VlpVYk83y0eqJloSAzgOgDHQwaDPlr-L55oqq7ulZKw/formResponse" target="hidden_iframe" method="POST" onsubmit="return validateForm();">
                                             <div class="row">
+
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                                        <input type="text" class="form-control" name="entry.235863697" id="name" placeholder="Name">
                                                     </div>
                                                 </div>
+
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                        <input type="email" class="form-control" name="entry.1261822205" id="email-check" placeholder="Email">   
                                                     </div>
                                                 </div>
+
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                        <input type="text" class="form-control" name="entry.1651537367" id="subject" placeholder="Subject">
                                                     </div>
                                                 </div>
+
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                                                        <textarea name="entry.967400919" class="form-control" id="message-check" cols="30" rows="7" placeholder="Message"></textarea>
                                                     </div>
                                                 </div>
+
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <input type="submit" value="Send Message" class="btn btn-primary">
                                                         <div class="submitting"></div>
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </form>
                                     </div>
@@ -169,11 +177,8 @@
     <script>
         AOS.init();
     </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
+    
+    <script src="js/validation.js" type="text/javascript"></script>
     
 </body>
 </html>

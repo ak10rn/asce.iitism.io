@@ -224,7 +224,7 @@ header{
     border: solid 1.5px #005DAB;
     border-radius: 1em;
     padding: 30px 5px;
-    min-height: 300px;
+    min-height: 230px;
     height: auto;
     overflow: auto;
 }
@@ -236,7 +236,7 @@ header{
     color: #005DAB;
     height: 100%;
     text-align: center;
-    padding-top: 3em;
+    padding-top: 2.5em;
 }
 .about-content{
     width: 65%;
@@ -313,3 +313,6 @@ header{
 #advisor2Text{
     float: left;
 }
+
+
+/* contact */
