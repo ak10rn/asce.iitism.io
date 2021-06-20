@@ -240,7 +240,7 @@ header{
 }
 .about-content{
     width: 65%;
-    text-align: justify;
+    text-align: center;
     padding-top: 1.5em;
     padding: 0 10px;
 }
