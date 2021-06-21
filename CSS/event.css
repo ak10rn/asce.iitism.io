@@ -161,3 +161,9 @@
   font-size: 80px;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .gallery{
+    width: 80%;
+  }
+}
