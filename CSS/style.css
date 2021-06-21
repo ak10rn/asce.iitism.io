@@ -210,7 +210,9 @@ header{
     width: 80%;
     margin: auto;
     font-size: 3em;
-    color: #023e70;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    color: #005DAB;
     text-align: center;
     font-weight: bold;
     padding-top: 10% ;

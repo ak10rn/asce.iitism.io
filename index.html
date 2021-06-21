@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/mobile.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/event.css">
     
     <script src="https://kit.fontawesome.com/b9327e5f49.js" crossorigin="anonymous"></script>
     
@@ -25,7 +26,9 @@
             <div>
                <a href="index.html"><img id="head-logo" src="image/logo.jpg" alt=""></a> 
             </div>
-            <label id="hamburger" for="toggle">&#9776;</label>
+            <div id="hamburger" class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
             <input id="toggle" type="checkbox">
             <div class="mobile-container" id="navbar">
                     <ul class="myLinks">
@@ -66,6 +69,15 @@
         </div>
     </div>
 
+    <div data-aos="zoom-in-up" class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery-cell"><img src="image/logo.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="image/logo.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="image/logo.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="image/logo.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="image/logo.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="image/logo.jpg" alt=""></div>
+    </div>
+
     <div id="footer">
         <div id="footer-top">
             <div id="bottomLogos" class="centered">
@@ -102,11 +114,30 @@
             </div>
         </div>
     </div>
-    </script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if(!menuOpen) {
+
+                menuBtn.classList.add('open');
+                menuOpen = true;
+                document.getElementById("toggle").checked= true ;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+                document.getElementById("toggle").checked= false ;
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
     
     
 </body>
