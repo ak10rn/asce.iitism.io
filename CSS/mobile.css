@@ -8,7 +8,6 @@
     height: 60px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    /* border: 3px solid #fff; */
   }
   .menu-btn__burger {
     margin: auto;
@@ -54,21 +53,27 @@
     float: right;
 }
 .mobile-container{
-    width: 100%;
+    transition: 1s;
+    width: 98%;
     clear: both;
     margin: auto;
-    display: none;
-    height: 350px;
+    height: 300px;
 }
 
-
+#navbar{
+    display: none;
+    transition: 1s;
+}
 
 #navbar ul li {
-    width: 100%;
+    margin: auto;
+    width: 98%;
+    margin-bottom: 10px;
 }
 
-#toggle:checked + .mobile-container {
-    display: block;
+#navbar ul li a:before{
+    width: 15%;
+    left: 42.5%;
 }
 
 /* Home Page */

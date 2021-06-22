@@ -29,7 +29,6 @@
             <div id="hamburger" class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
-            <input id="toggle" type="checkbox">
             <div class="mobile-container" id="navbar">
                     <ul class="myLinks">
                         <li><a class="current" href="index.html">Home</a></li>
@@ -128,16 +127,24 @@
 
                 menuBtn.classList.add('open');
                 menuOpen = true;
-                document.getElementById("toggle").checked= true ;
+                document.getElementById("navbar").style.display="block";
             } else {
                 menuBtn.classList.remove('open');
                 menuOpen = false;
-                document.getElementById("toggle").checked= false ;
+                document.getElementById("navbar").style.display="none";
             }
         });
     </script>
 
     <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".about-box"),{
+		max: 35,
+		speed: 1000
+	});
+    </script>
     
     
 </body>

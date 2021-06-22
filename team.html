@@ -33,12 +33,11 @@
           <div id="hamburger" class="menu-btn">
               <div class="menu-btn__burger"></div>
           </div>
-          <input id="toggle" type="checkbox">
           <div class="mobile-container" id="navbar">
                   <ul class="myLinks">
-                      <li><a class="current" href="index.html">Home</a></li>
+                      <li><a  href="index.html">Home</a></li>
                       <li><a href="events.html">Events</a></li>
-                      <li><a href="team.html">Team</a></li>
+                      <li><a class="current" href="team.html">Team</a></li>
                       <li><a href="advisors.html">Advisors</a></li>
                       <li><a href="contact.html">Contact us</a></li>
 
@@ -1561,7 +1560,7 @@
         </div>
       </div>
 
-      <!-- Deepak Kumar -->
+      <!-- Deepak Kumar-1 -->
       <div data-aos="zoom-in" class="flip-card-container">
         <div class="flip-card">
           <div class="flip-card-front">
@@ -1598,7 +1597,47 @@
             </div>
           </div>
         </div>
-      </div>  
+      </div>
+      
+      <!-- Deepak kumar-2 -->
+
+      <div data-aos="zoom-in" class="flip-card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img
+              class="flip-card-img"
+              src="image/profile-pic/DeepakKumar-2.jpg"
+              alt="User Image"
+            />
+          </div>
+          <div class="flip-card-back">
+            <img
+              class="flip-card-img"
+              src="image/profile-pic/DeepakKumar-2.jpg"
+              alt="User Image"
+            />
+            <div class="flip-card-det">
+              <h3>Deepak Kumar</h3>
+              <div class="flip-card-underline"></div>
+              <p>Team Coordinator</p>
+              <div class="flip-card-social">
+                <a
+                  href="https://touch.facebook.com/profile.php#"
+                  style="position: absolute; bottom: 0px; left: 20%"
+                  class="fa fa-facebook" target="_blank"
+                >
+                </a>
+                </a>
+                <a
+                  href="http://linkedin.com/in/deepak-kumar-5bb810215"
+                  style="position: absolute; bottom: 0px; right: 20%"
+                  class="fa fa-linkedin" target="_blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Joel Babu -->
       <div data-aos="zoom-in" class="flip-card-container">
@@ -1860,6 +1899,7 @@
     <script>
       AOS.init();
     </script>
+    
     <script>
       const menuBtn = document.querySelector('.menu-btn');
       let menuOpen = false;
@@ -1868,14 +1908,24 @@
 
               menuBtn.classList.add('open');
               menuOpen = true;
-              document.getElementById("toggle").checked= true ;
+              document.getElementById("navbar").style.display="block";
           } else {
               menuBtn.classList.remove('open');
               menuOpen = false;
-              document.getElementById("toggle").checked= false ;
+              document.getElementById("navbar").style.display="none";
           }
-      });
-  </script>    
+        });
+    </script>  
+    
+    <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".flip-card-container"),{
+		  max: 35,
+		  speed: 1000
+	  });
+    </script>
 
     
   </body>

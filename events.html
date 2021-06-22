@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASCE IIT (ISM) Dhanbad</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/gif/png" href="image/logo.jpg">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/mobile.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b9327e5f49.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -21,11 +23,10 @@
             <div id="hamburger" class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
-            <input id="toggle" type="checkbox">
             <div class="mobile-container" id="navbar">
                     <ul class="myLinks">
-                        <li><a class="current" href="index.html">Home</a></li>
-                        <li><a href="events.html">Events</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="current" href="events.html">Events</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="advisors.html">Advisors</a></li>
                         <li><a href="contact.html">Contact us</a></li>
@@ -62,10 +63,10 @@
         </div>
 
         <div id="footer-bottom">
-            <div id="copyright" class="centered">
+            <div id="copyright">
                 <p>Copyright &copy; 2021 All rights reserved | ASCE IIT (ISM) Dhanbad Student Chapter</p>
             </div>
-            <div id="social-media"class="centered">
+            <div id="social-media">
                 <p>Follow us on</p>
                 <div id="social-media-icons">
                     <a href=""><i class="fab fa-facebook-f"></i></a></i>
@@ -89,11 +90,11 @@
 
                 menuBtn.classList.add('open');
                 menuOpen = true;
-                document.getElementById("toggle").checked= true ;
+                document.getElementById("navbar").style.display="block";
             } else {
                 menuBtn.classList.remove('open');
                 menuOpen = false;
-                document.getElementById("toggle").checked= false ;
+                document.getElementById("navbar").style.display="none";
             }
         });
     </script>

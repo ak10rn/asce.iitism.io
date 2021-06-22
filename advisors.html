@@ -22,13 +22,12 @@
             <div id="hamburger" class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
-            <input id="toggle" type="checkbox">
             <div class="mobile-container" id="navbar">
                     <ul class="myLinks">
-                        <li><a class="current" href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="events.html">Events</a></li>
                         <li><a href="team.html">Team</a></li>
-                        <li><a href="advisors.html">Advisors</a></li>
+                        <li><a class="current" href="advisors.html">Advisors</a></li>
                         <li><a href="contact.html">Contact us</a></li>
 
                     </ul>
@@ -106,14 +105,14 @@
 
                 menuBtn.classList.add('open');
                 menuOpen = true;
-                document.getElementById("toggle").checked= true ;
+                document.getElementById("navbar").style.display="block";
             } else {
                 menuBtn.classList.remove('open');
                 menuOpen = false;
-                document.getElementById("toggle").checked= false ;
+                document.getElementById("navbar").style.display="none";
             }
         });
     </script>
-    
+        
 </body>
 </html>
