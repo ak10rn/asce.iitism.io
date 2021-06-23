@@ -53,17 +53,15 @@
     float: right;
 }
 .mobile-container{
-    transition: 1s;
     width: 98%;
     clear: both;
     margin: auto;
-    height: 300px;
-    transition: max-height 0.2s ease-out;
 }
 
 #navbar{
-    display: none;
-    transition: 1s;
+    height: 0px;
+    transition: 0.5s;
+    overflow-y: hidden;
 }
 
 #navbar ul li {

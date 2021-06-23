@@ -10524,9 +10524,7 @@ a.text-dark:focus {
 }
 
 body {
-    font-family: "Poppins", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.8;
     font-weight: normal;
     background: #fafafa;
     color: gray;
@@ -10647,7 +10645,7 @@ textarea.form-control {
 .info-wrap .dbox {
     width: 100%;
     color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .info-wrap .dbox:last-child {
@@ -10668,10 +10666,21 @@ textarea.form-control {
 }
 
 .info-wrap .dbox .icon {
+    float: left;
+    margin-right: 15px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+}
+
+.info-wrap .dbox .social-handles:hover{
+    transition: 0.5s ease-in-out;
+}
+
+.info-wrap .dbox .social-handles:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .info-wrap .dbox .icon span {

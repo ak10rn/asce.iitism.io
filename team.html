@@ -1592,7 +1592,7 @@
     <script>
       AOS.init();
     </script>
-    
+      
     <script>
       const menuBtn = document.querySelector('.menu-btn');
       let menuOpen = false;
@@ -1601,13 +1601,14 @@
 
               menuBtn.classList.add('open');
               menuOpen = true;
-              document.getElementById("navbar").style.display="block";
+              document.getElementById("navbar").style.height="300px";
           } else {
               menuBtn.classList.remove('open');
               menuOpen = false;
-              document.getElementById("navbar").style.display="none";
+              document.getElementById("navbar").style.height="0px";
+              
           }
-        });
+      });
     </script>  
     
     <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
