@@ -50,7 +50,10 @@ function validateForm() {
             document.getElementById('alert').style.display='none';
             var clear = document.getElementsByClassName('form-control');
             clear.value="";
-            submitted=true;
             return true;
+        }
+
+        else{
+            return false;
         }
 }   

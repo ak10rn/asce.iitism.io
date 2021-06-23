@@ -58,6 +58,7 @@
     clear: both;
     margin: auto;
     height: 300px;
+    transition: max-height 0.2s ease-out;
 }
 
 #navbar{

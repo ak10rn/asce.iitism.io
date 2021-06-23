@@ -252,7 +252,6 @@ header{
 .about-box{
     transform-style: preserve-3d;
     transform: perspective(1000px);
-    background: #005dab0a;
     margin: auto;
     margin-bottom: 60px;
     width: 80%;
