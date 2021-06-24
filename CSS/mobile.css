@@ -146,6 +146,10 @@ padding: 10px;
     width: 110px;
 }
 
+.advisorPhotoBox p{
+    margin-top: 35px;
+}
+
 .advisorText{
     width: 100%;
 }
